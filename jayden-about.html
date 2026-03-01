@@ -11,6 +11,7 @@
     <title>Jayden Phan Le - About</title>
 </head>
 <body>
+<script>if(localStorage.getItem('theme')==='light')document.body.classList.add('light-mode');</script>
     
     <div id="top-bar-thing"></div>
 
@@ -59,9 +60,11 @@
                 </div>
             </div>
         </section>
+    </main>
 
-        <!-- Interests Section -->
-        <section class="mb-5">
+    <!-- Interests Section in alternating dark -->
+    <section class="dark-section-alt">
+        <div class="container">
             <h2 class="h2 fw-bold mb-4 text-info text-center">Interests & Hobbies</h2>
             <div class="row g-4">
                 <div class="col-lg-4">
@@ -71,7 +74,7 @@
                                 <i class="bi bi-robot" style="font-size: 3rem; color: var(--primary);"></i>
                             </div>
                             <h5 class="card-title h5 fw-bold mb-3">Robotics</h5>
-                            <p class="card-text" style="color: #b0b3b8;">Lego Mindstorms and FRC</p>
+                            <p class="card-text text-secondary">Lego Mindstorms and FRC</p>
                         </div>
                     </div>
                 </div>
@@ -82,7 +85,7 @@
                                 <i class="bi bi-code-slash" style="font-size: 3rem; color: var(--primary);"></i>
                             </div>
                             <h5 class="card-title h5 fw-bold mb-3">Programming</h5>
-                            <p class="card-text" style="color: #b0b3b8;">Python, C++, JavaScript</p>
+                            <p class="card-text text-secondary">Python, C++, JavaScript</p>
                         </div>
                     </div>
                 </div>
@@ -93,13 +96,15 @@
                                 <i class="bi bi-trophy" style="font-size: 3rem; color: var(--primary);"></i>
                             </div>
                             <h5 class="card-title h5 fw-bold mb-3">Sports</h5>
-                            <p class="card-text" style="color: #b0b3b8;">Tennis, Swimming and Football</p>
+                            <p class="card-text text-secondary">Tennis, Swimming and Football</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
+    <main class="container" style="padding-top: 60px; padding-bottom: 60px;">
         <!-- Contact Info -->
         <section>
             <div class="card" style="background: var(--gSecondary); border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
@@ -134,6 +139,7 @@
 
     <div id="bottom-bar-thing"></div>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/translations.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
